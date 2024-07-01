@@ -195,11 +195,12 @@ h3 {
   display: flex;
   justify-content: center; /* Centra la tabla horizontalmente */
   align-items: center; /* Centra la tabla verticalmente */
-  height: 100vh; /* O cualquier altura deseada */
+  height: 100%; /* O cualquier altura deseada */
 }
 
 table {
   width: 100%;
+  height: 100%;
   border-collapse: collapse;
 }
 

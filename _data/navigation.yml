@@ -1,7 +1,5 @@
 main:
-  - title: "Features"
-    url: /#features
+  - title: "Precios de hoy"
+    url: /#precios
   - title: "Blog"
     url: /blog/
-  - title: "Download"
-    url: /#download
