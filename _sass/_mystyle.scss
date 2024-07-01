@@ -1,0 +1,211 @@
+// Dark mode classes
+
+$darkColor: #fff5d0;
+
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4,
+.theme-dark h5,
+.theme-dark a {
+  color: $darkColor !important;
+}
+
+body.theme-dark,
+.theme-dark .masthead,
+.theme-dark .page__meta {
+  background-color: #0f1117;
+  color: #d6d6d6;
+}
+.theme-dark .social-icons .fas,
+.theme-dark .social-icons .fab,
+.theme-dark .social-icons .far,
+.theme-dark .social-icons .fal {
+  color: #d6d6d6 !important;
+}
+
+.theme-dark .page__hero--overlay .page__meta {
+  background-color: transparent !important;
+}
+
+.theme-dark #mainNav {
+  background-color: #21252a !important;
+  color: $darkColor;
+}
+
+.theme-dark .bg-light {
+  background-color: #433664 !important;
+  color: $darkColor;
+}
+
+.theme-dark #mainNav .navbar-toggler {
+  color: $darkColor;
+  border-color: $darkColor;
+}
+
+// Hero image on index.html
+.masthead {
+  background: linear-gradient(
+      180deg,
+      transparent 0,
+      transparent 20%,
+      rgba(255, 255, 255, 0.1) 40%,
+      rgba(255, 255, 255, 0.5) 70%,
+      #fff
+    ),
+    url(../images/horas-baratas-electricidad-2.png) center bottom no-repeat, url(../images/bg-page.gif) repeat-x;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 5rem !important;
+}
+
+// Avatars
+.avatar-group .avatar {
+  margin-right: -20px; /* Adjust as needed */
+  display: inline-block;
+  border-color: #0f1117;
+  border-width: 4px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  border: 0 solid #0f1117;
+}
+
+.avatar {
+  width: 48px; /* Adjust as per your requirements */
+  height: 48px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flipped {
+  transform: scaleX(-1);
+}
+
+// For sharing the blog on the app too
+
+h1,
+h2,
+h3 {
+  padding-top: 1rem !important;
+}
+
+.archive__item a {
+  text-decoration: none;
+  font-family: $headings-font-family;
+}
+
+// .archive__item-teaser {
+//   max-height: 200px; // Limit the height on the reel of post
+// }
+
+.achive > .page__title {
+  margin-bottom: 1.5rem !important;
+}
+
+.blogapp .initial-content,
+.search-content {
+  padding-top: 0 !important; // To start right at the top
+  padding-bottom: 6rem !important; // To let some space on for the menu footer app bar
+}
+
+@media (min-width: 48em) {
+  .archive__item-teaser img {
+    transform: translateY(-25%) !important; // Better ajustment for square pictures
+  }
+}
+
+@media (max-width: 767.98px) {
+  .masthead {
+    padding-top: 5rem !important;
+  }
+  /* max-width para md- */
+  #cta-download {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f80; /* O el color que desees para el fondo */
+    z-index: 1000; /* Para asegurarse de que se superpone a otros elementos */
+    max-height: 130px;
+  }
+
+  #chart-container {
+    height: calc((var(--vh, 1vh) * 100) - 2.5rem - 330px) !important;
+  }
+}
+
+.theme-dark #apps .card-body {
+  background-color: #000 !important;
+}
+
+.theme-dark #apps .card-footer {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.theme-dark #apps .card {
+  border-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+#textToday {
+  font-weight: bold;
+  font-size: large;
+}
+
+.theme-dark .color-highlight,
+.color-highlight {
+  color: #f80 !important;
+}
+
+.theme-dark .color-cara,
+.color-cara {
+  color: #f44 !important;
+}
+
+.theme-dark .color-barata,
+.color-barata {
+  color: #9c0 !important;
+}
+
+.bg-green-dark {
+  background-color: rgba(153, 204, 0, 0.8) !important;
+  color: #fff !important;
+}
+
+.bg-yellow-dark {
+  background-color: #f6bb42 !important;
+  color: #fff !important;
+}
+
+.bg-red-dark {
+  background-color: #da4453 !important;
+  color: #fff !important;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center; /* Centra la tabla horizontalmente */
+  align-items: center; /* Centra la tabla verticalmente */
+  height: 100vh; /* O cualquier altura deseada */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead,
+tbody {
+  display: table !important;
+  width: 100%;
+  table-layout: fixed; /* Ensure equal column width distribution */
+}

@@ -1,0 +1,26 @@
+//
+// Styles
+//
+
+// Import variables
+@import "./variables.scss";
+
+// Import Bootstrap
+// TODO Optimize Boostrap before Production, commenting sections
+@import "bootstrap/scss/bootstrap.scss";
+
+// Global CSS
+@import "./global.scss";
+
+// Components
+@import "./components/navbar.scss";
+@import "./components/device-mockup.scss";
+
+// Sections
+@import "./sections/cta.scss";
+@import "./sections/features.scss";
+@import "./sections/footer.scss";
+@import "./sections/masthead.scss";
+
+// Import custom APP styles
+@import "./mystyle.scss";

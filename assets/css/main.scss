@@ -1,0 +1,59 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+//
+// Styles
+//
+
+// Minimal Mistakes
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// Override main colors
+$blue: rgb(0, 153, 255);
+$purple: rgb(255, 51, 133);
+
+// To fix dependencies on sizing the typografy
+html {
+  font-size: 16px !important;
+}
+// To fix navigation on blog
+.page__hero--overlay {
+  padding-top: 10em !important;
+}
+
+.initial-content,
+.search-content {
+  padding-top: 4rem !important;
+}
+
+// Fix some colors incongruencies
+a:visited {
+  color: inherit !important;
+}
+
+// a:visited {
+//   @extend a;
+// }
+
+.search__toggle {
+  color: $purple !important;
+}
+
+// Adapting .author__avatar to APP Mockup
+.author__avatar img {
+  border-radius: 0 !important;
+  border: none !important;
+  max-width: 200px !important;
+}
+
+@media (min-width: 64em) {
+  .sticky {
+    top: 5em !important;
+  }
+}
+
+// New Age + Bootstrap
+@import "styles.scss";

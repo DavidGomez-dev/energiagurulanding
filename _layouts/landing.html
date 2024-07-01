@@ -1,0 +1,524 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %} {% include head/custom.html %}
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- <link href="assets/css/styles.css" rel="stylesheet" /> -->
+  </head>
+  <body id="page-top" class="webPrecios">
+    <!-- Navigation-->
+    {% include navigation.html %}
+    <!-- Mashead header-->
+    <header class="masthead">
+      <div class="container px-md-5">
+        <div class="row gx-5 align-items-top">
+          <div class="col-lg-6 text-center">
+            <h2 id="titleToday"></h2>
+            <div id="textToday"></div>
+            <div id="chart-container">
+              <canvas class="graph" id="PricesChart" style="display: none; box-sizing: border-box"></canvas>
+            </div>
+
+            <!-- Mashead text and app badges-->
+            <div class="mb-5 mb-lg-0 text-center text-lg-start d-none d-md-block">
+              <h2 class="display-3 lh-1 mb-3">Descarga la APP en tu móvil gratis 👇</h2>
+            </div>
+            <div id="cta-download" class="py-3">
+              <div class="d-flex flex-column flex-lg-row align-items-center pt-md-3">
+                <p class="d-md-none">Descarga la app para una mejor experiencia</p>
+                <a id="downpwa" class="me-lg-3 mb-4 mb-lg-0 d-md-inline" href="{{ site.pwalink }}"
+                  ><img class="app-badge" src="assets/images/pwa-badge.svg" alt="Launch {{ site.title}} on your device"
+                /></a>
+                <a id="downandroid" class="me-lg-3 mb-4 mb-lg-0 d-md-inline" href="{{ site.googleplaylink }}"
+                  ><img
+                    class="app-badge"
+                    src="assets/images/google-play-badge.svg"
+                    alt="Download {{ site.title}} from Google Play"
+                /></a>
+                <a id="downios" class="d-md-inline" href="{{ site.appstorelink }}"
+                  ><img
+                    class="app-badge"
+                    src="assets/images/app-store-badge.svg"
+                    alt="Download {{ site.title}} from Apple Store"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <!-- Masthead device mockup feature-->
+            <div class="masthead-device-mockup py-4 d-none d-md-flex">
+              <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                    <stop class="gradient-start-color" offset="0%"></stop>
+                    <stop class="gradient-end-color" offset="100%"></stop>
+                  </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="50"></circle></svg
+              ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                <rect
+                  x="-32.54"
+                  y="78.39"
+                  width="305.92"
+                  height="84.05"
+                  rx="42.03"
+                  transform="translate(120.42 -49.88) rotate(45)"
+                ></rect>
+                <rect
+                  x="-32.54"
+                  y="78.39"
+                  width="305.92"
+                  height="84.05"
+                  rx="42.03"
+                  transform="translate(-49.88 120.42) rotate(-45)"
+                ></rect></svg
+              ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50"></circle>
+              </svg>
+              <div class="device-wrapper">
+                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                  <a href="{{ site.pwalink }}" alt="Launch Web App">
+                    <div class="screen bg-black">
+                      <!-- PUT CONTENTS HERE:-->
+                      <!-- * * This can be a video, image, or just about anything else.-->
+                      <!-- * * Set the max width of your media to 100% and the height to-->
+                      <!-- * * 100% like the demo example below.-->
+                      <img
+                        src="assets/images/demo-screen.gif"
+                        style="max-width: 100%; height: 100%"
+                        alt="Zodiac Zone App"
+                        srcset=""
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Avatar testimonials -->
+            <div
+              class="d-none d-md-flex flex-column flex-md-row justify-content-center align-items-center g-3 gap-4 mt-4 pt-3"
+            >
+              <div class="avatar-group">
+                <!-- Custom class for avatar grouping -->
+                <!-- Avatar items -->
+                <div class="avatar">
+                  <!-- Custom class for avatar size -->
+                  <img alt="Usuario feliz de Energia Guru" src="assets/images/testimonial_6.jpg" />
+                </div>
+                <div class="avatar">
+                  <!-- Custom class for avatar size -->
+                  <img alt="Usuario feliz de Energia Guru" src="assets/images/testimonial_7.jpg" />
+                </div>
+                <div class="avatar">
+                  <!-- Custom class for avatar size -->
+                  <img alt="Usuario feliz de Energia Guru" src="assets/images/testimonial_3.png" />
+                </div>
+                <div class="avatar">
+                  <!-- Custom class for avatar size -->
+                  <img alt="Usuario feliz de Energia Guru" src="assets/images/testimonial_4.png" />
+                </div>
+                <div class="avatar">
+                  <!-- Custom class for avatar size -->
+                  <img alt="Usuario feliz de Energia Guru" src="assets/images/testimonial_maria.png" />
+                </div>
+              </div>
+              <div class="d-flex flex-column justify-content-center align-items-center align-items-md-start g-1">
+                <div class="rating">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                </div>
+                <div class="text-muted"><span class="fw-bold fs-5">+500</span> usuarios en España</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Price summary -->
+    <section class="bg-light">
+      <article>
+        <div class="container px-5">
+          <div class="row gx-5 align-items-top justify-content-center justify-content-lg-between">
+            <div class="col-12 col-lg-5">
+              <h1 itemprop="name">Precio de la tarifa de la luz hora a hora hoy <span class="dateToday"></span></h1>
+              <p class="pt-2">
+                Este es el resumen completo de los <a href="/"> precios de la tarifa de la luz para hoy</a>, mostrando
+                con distintos colores los períodos <span class="color-green-dark">valle</span>,
+                <span class="color-yellow-dark">llano</span> y <span class="color-red-dark">punta</span>:
+              </p>
+              <p id="parrResumenHoy" class="pt-5"></p>
+              <h3 class="my-3">Horas a vigilar este <span class="dateTodayName"></span></h3>
+              <ul id="tableResumenHoy" class="icon-list font-14 py-3"></ul>
+              <div class="text-center">
+                <a href="#download" class="btn btn-primary rounded-pill px-3 mx-auto my-3 mb-2 mb-lg-0 text-white"
+                  ><i class="fas fa-chart-bar"></i> Ver tarifa luz completa</a
+                >
+              </div>
+            </div>
+            <div class="col-sm-8 col-md-6 table-container" itemscope itemtype="https://schema.org/PriceSpecification">
+              <table class="table table-borderless text-center rounded-sm shadow-l w-100" style="overflow: hidden">
+                <thead>
+                  <tr>
+                    <th scope="col" class="bg-dark-dark border-dark-dark color-white">Hora</th>
+                    <th scope="col" class="bg-dark-dark border-dark-dark color-white">Precio</th>
+                  </tr>
+                </thead>
+                <tbody id="tablePricesBody"></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row gx-5 align-items-top justify-content-center justify-content-lg-between">
+            <h2>
+              El precio de la tarifa de la luz hoy: ¿qué horas tienen la tarifa más barata este
+              <span class="dateTodayName"></span>?
+            </h2>
+
+            <p class="pt-2">
+              Estos precios derivan del mercado mayorista o 'pool' y repercuten directamente en la tarifa regulada (el
+              denominado PVPC), a la que están acogidos casi 9 millones de consumidores en el país, y sirven de
+              referencia para los otros 20 millones que tienen contratado su suministro en el mercado libre.
+            </p>
+            <p class="pt-2">
+              En los últimos años, el Precio Voluntario para el Pequeño Consumidor (PVPC) en España ha experimentado
+              diversas modificaciones, reflejando cambios tanto en la estructura del mercado eléctrico como en las
+              políticas gubernamentales.
+            </p>
+            <p class="pt-2">
+              Hasta 2023, el PVPC se calculaba basándose únicamente en los precios diarios del mercado mayorista de la
+              electricidad. Sin embargo, a partir de enero de 2024, se ha introducido un nuevo método de cálculo que
+              busca reducir la volatilidad y estabilizar los precios. Este nuevo método implica que el 75% del precio se
+              determinará por el mercado diario y el 25% restante se repartirá entre los mercados de futuros mensuales,
+              trimestrales y anuales. Esta proporción cambiará progresivamente, con una mayor dependencia de los
+              mercados de futuros, alcanzando un 55% para 2026.
+            </p>
+
+            <p class="pt-2">
+              Además, el año 2024 ha visto el fin de varias medidas de ayuda que se implementaron para mitigar los
+              impactos de la crisis energética, como rebajas fiscales y descuentos en el bono social. Por ejemplo, la
+              reducción del IVA del 5% al 10% y otras rebajas en impuestos específicos están programadas para
+              desaparecer gradualmente.
+            </p>
+            <p class="pt-2">
+              El precio del PVPC también ha estado influenciado por factores externos como los costos de producción, la
+              demanda estacional de energía y eventos políticos y económicos. Por ejemplo, los costos más altos de
+              producción de electricidad, especialmente aquellos basados en gas natural, han elevado los precios
+              finales. Al mismo tiempo, las inversiones en energías renovables, aunque costosas inicialmente, son vistas
+              como una solución a largo plazo para reducir estos costos.
+            </p>
+            <p class="pt-2">
+              En resumen, la evolución del PVPC en España en los últimos años ha estado marcada por un intento de
+              estabilizar los precios mediante la introducción de nuevos métodos de cálculo y la gradual retirada de
+              medidas de apoyo económico, en un contexto de fluctuaciones del mercado y costos de producción variables.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- App badge section-->
+    <section class="bg-gradient-primary-to-secondary" id="download">
+      <div class="container px-5">
+        <h3 class="text-center text-white font-alt mb-4">Descarga gratis la APP para tener toda la información!</h3>
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+          <a class="me-lg-3 mb-4 mb-lg-0" href="{{ site.pwalink }}"
+            ><img class="app-badge" src="assets/images/pwa-badge.svg" alt="Launch {{ site.title}} on your device"
+          /></a>
+          <a class="me-lg-3 mb-4 mb-lg-0" href="{{ site.googleplaylink }}"
+            ><img
+              class="app-badge"
+              src="assets/images/google-play-badge.svg"
+              alt="Download {{ site.title}} from Google Play"
+          /></a>
+          <a href="{{ site.appstorelink }}"
+            ><img
+              class="app-badge"
+              src="assets/images/app-store-badge.svg"
+              alt="Download {{ site.title}} from Apple Store"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- App features section-->
+    <section id="features">
+      <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
+            <div class="container-fluid px-5">
+              <div class="row gx-5">
+                <div class="col-md-6 mb-5">
+                  <!-- Feature item-->
+                  <div class="text-center">
+                    <i class="bi-graph-down icon-feature text-gradient d-block mb-3"></i>
+                    <h3 class="font-alt">Precios horarios</h3>
+                    <p class="text-muted mb-0">
+                      Precios de la electricidad en España (PVPC) de hoy y de mañana actulizados!
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                  <!-- Feature item-->
+                  <div class="text-center">
+                    <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
+                    <h3 class="font-alt">Notificaciones útiles</h3>
+                    <p class="text-muted mb-0">
+                      Recibirás notificaciones en tu movil en la hora más cara y más barata, para programar tu consumo!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-5 mb-md-0">
+                  <!-- Feature item-->
+                  <div class="text-center">
+                    <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
+                    <h3 class="font-alt">Gratis de usar</h3>
+                    <p class="text-muted mb-0">Y con una versión premium de pago sin anuncios!</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <!-- Feature item-->
+                  <div class="text-center">
+                    <i class="bi-chat-left-text icon-feature text-gradient d-block mb-3"></i>
+                    <h3 class="font-alt">Consejos para ahorrar</h3>
+                    <p class="text-muted mb-0">
+                      Un interesante Blog con muchos consejos para entender y ahorrar en la factura de la luz
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 order-lg-0">
+            <!-- Features section device mockup-->
+            <div class="features-device-mockup">
+              <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                    <stop class="gradient-start-color" offset="0%"></stop>
+                    <stop class="gradient-end-color" offset="100%"></stop>
+                  </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="50"></circle></svg
+              ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                <rect
+                  x="-32.54"
+                  y="78.39"
+                  width="305.92"
+                  height="84.05"
+                  rx="42.03"
+                  transform="translate(120.42 -49.88) rotate(45)"
+                ></rect>
+                <rect
+                  x="-32.54"
+                  y="78.39"
+                  width="305.92"
+                  height="84.05"
+                  rx="42.03"
+                  transform="translate(-49.88 120.42) rotate(-45)"
+                ></rect></svg
+              ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50"></circle>
+              </svg>
+              <div class="device-wrapper">
+                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                  <div class="screen bg-black">
+                    <!-- PUT CONTENTS HERE:-->
+                    <!-- * * This can be a video, image, or just about anything else.-->
+                    <!-- * * Set the max width of your media to 100% and the height to-->
+                    <!-- * * 100% like the demo example below.-->
+                    <img
+                      src="assets/images/demo-screen.gif"
+                      style="max-width: 100%; height: 100%"
+                      alt="Zodiac Zone App"
+                      srcset=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Quote/testimonial aside-->
+    <aside class="text-center bg-gradient-primary-to-secondary">
+      <div class="container px-5">
+        <!-- Top Achivements-->
+        <div class="row justify-content-center">
+          <div class="col-sm-4">
+            <div class="d-flex justify-content-center align-items-center text-white p-3 rounded-3 mb-3">
+              <img src="assets/images/laurel.svg" alt="Laurel Left" class="" style="height: 64px" />
+              <span class="text-center">
+                <span class="fs-4 fw-bold">1M+</span>
+                <br />
+                <!-- Line break to move 'downloads' to a new line -->
+                <span class="fs-6">descargas</span>
+              </span>
+              <img src="assets/images/laurel.svg" alt="Laurel Right" class="flipped" style="height: 64px" />
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="d-flex justify-content-center align-items-center text-white p-3 rounded-3 mb-3">
+              <img src="assets/images/laurel.svg" alt="Laurel Left" class="" style="height: 64px" />
+              <span class="text-center">
+                <span class="fs-4 fw-bold">1<sup class="fs-6 fw-bold">er</sup></span>
+                <br />
+                <!-- Line break to move 'downloads' to a new line -->
+                <span class="fs-8">premio</span>
+              </span>
+              <img src="assets/images/laurel.svg" alt="Laurel Right" class="flipped" style="height: 64px" />
+            </div>
+          </div>
+        </div>
+        <div class="row gx-5 justify-content-center">
+          <div class="col-xl-8">
+            <div class="h3 fs-1 text-white mb-4">
+              "Me permite escoger la hora más óptima, para poner determinados electrodomésticos, y poder ahorrar."
+            </div>
+            <img
+              class="img-fluid rounded-circle"
+              src="assets/images/testimonial_5.jpg"
+              alt="Usuario de Energia Guru"
+              style="height: 9rem"
+            />
+            <div class="text-muted">"Raquel López - Pamplona"</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- Blog Section-->
+    <section id="blog">
+      <div class="container px-5">
+        <h2 class="display-4 lh-1 mb-4">Artículos sobre el precio de la luz</h2>
+        <div class="entries-grid">
+          {% for post in site.posts limit:8 %} {% include archive-single.html type="grid" %} {% endfor %}
+        </div>
+      </div>
+    </section>
+    <!-- Call to action section-->
+    <section class="cta">
+      <div class="cta-content">
+        <div class="container px-5">
+          <h2 class="text-white display-1 lh-1 mb-4">
+            Conoce los precios de la luz.
+            <br />
+            Empieza a ahorrar.
+          </h2>
+          <a class="btn btn-light py-3 px-4 rounded-pill" href="{{ site.pwalink }}" target="_blank"
+            >Usa la APP en tu movil →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Apps Section-->
+    <section id="apps" class="bg-light">
+      <div class="container px-5">
+        <h2 class="display-4 lh-1 mb-4">Apps relacionadas</h2>
+        <p class="lead fw-normal text-muted mb-5">Si te gusta esta APP, prueba estas otras:</p>
+        <div class="container mt-5">
+          <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <!-- Card 1 -->
+            <div class="col">
+              <div class="card h-100">
+                <img src="/assets/images/apps/featuredzodiac.png" class="card-img-top" alt="Zodiac Zone App" />
+                <div class="card-body">
+                  <h5 class="card-title">Zodiac Zone Horoscope</h5>
+                  <p class="card-text">
+                    This app is your go-to source for
+                    <a href="https://zodiaczonehoroscope.com/">personalized daily horoscopes</a>, offering profound
+                    insights under the guidance of the stars. Whether you’re a horoscope enthusiast or just starting to
+                    explore astrology, Zodiac Zone is packed with horoscope wisdom for everyone.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://app.zodiaczonehoroscope.com/" class="text-muted"
+                    ><i class="fab fa-html5 icon"></i
+                  ></a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.zodiaczonehoroscope.app.twa"
+                    class="text-muted"
+                    ><i class="fab fa-google-play icon"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col">
+              <div class="card h-100">
+                <img src="/assets/images/apps/featuredfortune.jpg" class="card-img-top" alt="Fortune Cookie App" />
+                <div class="card-body">
+                  <h5 class="card-title">Funny Fortune Cookie</h5>
+                  <p class="card-text">
+                    The ultimate <a href="https://fortunecookie.pro/">fortune cookie app</a> that combines wisdom,
+                    destiny, and a generous splash of humor! Whether you're looking to start your day with a smile,
+                    seeking a chuckle during a coffee break, or in need of a lighthearted moment amidst the hustle and
+                    bustle, Funny Fortune Cookie has got you covered.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://play.google.com/store/apps/details?id=pro.fortunecookie.app" class="text-muted"
+                    ><i class="fab fa-google-play icon"></i
+                  ></a>
+                  <a href="https://apps.apple.com/us/app/funny-fortune-cookie/id6479644974" class="text-muted"
+                    ><i class="fab fa-app-store-ios icon"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+              <div class="card h-100">
+                <img src="/assets/images/apps/featuredpeople.png" class="card-img-top" alt="People counter App" />
+                <div class="card-body">
+                  <h5 class="card-title">People Counter</h5>
+                  <p class="card-text">
+                    <a href="https://www.counterpeople.com/">Counter app</a> for people in your events in amazing real
+                    time with your phone, no need for old hand tallies or other devices,. Share the event easily with
+                    other gatekeepers so you can monitor different gates (entrances or exits) at real time, cooperative
+                    and synchronized, knowing always the actual number of people inside.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://app.counterpeople.com/" class="text-muted"><i class="fab fa-html5 icon"></i></a>
+                  <a href="https://play.google.com/store/apps/details?id=com.counterpeople.www.twa" class="text-muted"
+                    ><i class="fab fa-google-play icon"></i
+                  ></a>
+                  <a href="https://apps.apple.com/us/app/people-counter-digital-tally/id6480425693" class="text-muted"
+                    ><i class="fab fa-app-store-ios icon"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <!-- <footer class="bg-black text-center py-5">
+      <div class="container px-5">
+        <div class="text-white-50 small">
+          <div class="mb-2">&copy; Your Website 2023. All Rights Reserved.</div>
+          <a href="#!">Privacy</a>
+          <span class="mx-1">&middot;</span>
+          <a href="#!">Terms</a>
+          <span class="mx-1">&middot;</span>
+          <a href="#!">FAQ</a>
+        </div>
+      </div>
+    </footer> -->
+    <div id="footer" class="page__footer mt-0">
+      <footer>{% include footer/custom.html %} {% include_cached footer.html %}</footer>
+    </div>
+    {% include scripts.html %}
+    <!-- Prices JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+    <script src="assets/js/prices.js"></script>
+  </body>
+</html>
