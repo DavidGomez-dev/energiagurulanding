@@ -3,7 +3,7 @@
 window.addEventListener("DOMContentLoaded", (event) => {
   //Chart for the prices
 
-  //Loading the Graph
+  //Loading the Graph.
   const pricesChart = document.getElementById("PricesChart");
 
   const VERBOSE = true;
