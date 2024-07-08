@@ -52,9 +52,9 @@ social:
 
 # Analytics
 analytics:
-  provider: # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider: "google-gtag"
   google:
-    tracking_id: #'G-XXXXXXX'
+    tracking_id: "G-8B51SVLZFF"
     anonymize_ip: # true, false (default)
 
 # Additional scripts (for New Age + Bootstrap)

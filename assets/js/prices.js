@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   //Loading the Graph.
   const pricesChart = document.getElementById("PricesChart");
 
-  const VERBOSE = true;
+  const VERBOSE = false;
   const webToday = true;
   const webTomorrow = false;
   const webPrecios = document.getElementsByClassName("webPrecios");
@@ -290,7 +290,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
       const parrResumenHoy = document.getElementById("parrResumenHoy");
       if (parrResumenHoy) {
-        parrResumenHoy.innerHTML = `El precio de la tarifa de la luz en el mercado regulado (PVPC) este ${fechaFormateada} es distinto con respecto al día
+        parrResumenHoy.innerHTML = `El precio de la luz hoy por horas en el mercado regulado (PVPC) este ${fechaFormateada} es distinto con respecto al día
               anterior. El precio medio será de ${
                 Math.round(avgPrice * 10) / 10000
               }€ euros el kilovatio hora (kWh). La hora más barata será
