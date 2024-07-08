@@ -17,7 +17,7 @@ title: Energia Guru
 email: energiaguruapp@gmail.com tocar
 pwalink: "https://app.energia.guru/"
 googleplaylink: "https://play.google.com/store/apps/details?id=guru.energia.www.twa"
-appstorelink: "https://apps.apple.com/us/app/energia-guru/id6503163813"
+appstorelink: "https://apps.apple.com/app/apple-store/id6503163813?pt=126976667&ct=landing&mt=8"
 description: "La tarifa de la luz de hoy en cada hora para el PVPC es un precio que cambia de forma horaria y te puede permitir ahorrar en tu factura de electricidad."
 twitter_username: "@EnergiaGuru"
 github_username: username
@@ -108,7 +108,7 @@ author:
       url: "https://play.google.com/store/apps/details?id=guru.energia.www.twa"
     - label: "Apple Store"
       icon: "fab fa-fw fa-apple"
-      url: "https://apps.apple.com/us/app/energia-guru/id6503163813"
+      url: "https://apps.apple.com/app/apple-store/id6503163813?pt=126976667&ct=landing&mt=8"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   url: "https://twitter.com/"
