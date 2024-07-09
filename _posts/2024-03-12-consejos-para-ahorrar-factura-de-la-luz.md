@@ -29,9 +29,9 @@ Aunque el gasto parezca pequeño de forma unitaria, es acumulativo, por lo que p
 
 Eso es el gasto en energía, al que además hay que **sumar gastos fijos de potencia e impuestos**, que son porcentuales, por tanto el gasto final de esa plancha será mayor.
 
-Es por ello que la principal medida para ahorrar en la factura de la luz es **identificar cuáles son los mayores consumidores** que tenemos en el hogar, como se puede leer en el artículo [“Qué es lo que más consume en un hogar”](que-consume-mas-hogar.html), y tratar de ajustar su consumo a las horas baratas del día.
+Es por ello que la principal medida para ahorrar en la factura de la luz es **identificar cuáles son los mayores consumidores** que tenemos en el hogar, como se puede leer en el artículo [“Qué es lo que más consume en un hogar”](/que-es-mas-consume-hogar/), y tratar de ajustar su consumo a las horas baratas del día.
 
-Puedes ver aquí la [tarifa de la luz para hoy hora a hora](precio-luz-hoy.html) y en este otro enlace, la [tarifa de la luz para mañana](precio-luz-manana.html).
+Puedes ver aquí la [tarifa de la luz para hoy hora a hora](/).
 
 ### Consejos para ahorrar electricidad
 

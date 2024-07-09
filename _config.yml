@@ -14,11 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Energia Guru
-email: energiaguruapp@gmail.com tocar
+email: energiaguruapp@gmail.com
 pwalink: "https://app.energia.guru/"
 googleplaylink: "https://play.google.com/store/apps/details?id=guru.energia.www.twa"
 appstorelink: "https://apps.apple.com/app/apple-store/id6503163813?pt=126976667&ct=landing&mt=8"
-description: "La tarifa de la luz de hoy en cada hora para el PVPC es un precio que cambia de forma horaria y te puede permitir ahorrar en tu factura de electricidad."
+description: "El precio de la luz hoy por horas de la tarifa PVPC. Es un precio que cambia de forma horaria y te puede permitir ahorrar en tu factura de electricidad."
 twitter_username: "@EnergiaGuru"
 github_username: username
 minimal_mistakes_skin: contrast #default
@@ -127,6 +127,12 @@ footer:
     - label: "Sitemap"
       icon: "fas fa-fw fa-sitemap"
       url: "https://www.energia.guru/sitemap.xml"
+    - label: "Terms"
+      icon: "fas fa-fw fa-file-signature"
+      url: "/terms/"
+    - label: "Privacy"
+      icon: "fas fa-fw fa-user-secret"
+      url: "/privacy/"
     - label: #"GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"

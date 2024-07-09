@@ -3,7 +3,7 @@ permalink: /terms/
 title: "Terms"
 ---
 
-# Terms and Conditions
+## Terms and Conditions
 
 **Last updated: March 22, 2024**
 
@@ -220,7 +220,6 @@ By continuing to access or use Our Service after those revisions become effectiv
 
 For any questions or concerns regarding your privacy, you may contact us using the following details:
 
-- tailored.systems
-- APP@gmail.com
+- energiaguruapp@gmail.com
 
 ---

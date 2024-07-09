@@ -72,8 +72,8 @@ El **PVPC es un precio variable que cambia cada hora** y que transpone directame
 
 ![Ejemplo de cómo se forma el PVPC](/assets/images/formacion-pvpc.jpg)
 
-Desde el 1 de enero de 2024, el PVPC se calcula con una nueva metodología aprobada por el Real Decreto 446/2023 de 13 de junio. Esta nueva metodología incluye un componente basado en los precios de los mercados de futuros para reducir la volatilidad del precio [oai_citation:1,Precio Voluntario para el Pequeño Consumidor (PVPC)](https://www.miteco.gob.es/es/energia/energia-electrica/electricidad/contratacion-suministro/precio-voluntario.html) [oai_citation:2,Voluntary price for the small consumer (PVPC) | Red Eléctrica](https://www.ree.es/en/activities/operation-of-the-electricity-systemvoluntary-price-small-consumer-pvpc) [oai_citation:3,
-La forma de calcular el precio de la tarifa regulada o PVPC cambiará en 2024 | Comunidad de Madrid ](https://www.comunidad.madrid/servicios/consumo/forma-calcular-precio-tarifa-regulada-o-pvpc-cambiara-2024).
+Desde el 1 de enero de 2024, el PVPC se calcula con una nueva metodología aprobada por el Real Decreto 446/2023 de 13 de junio. Esta nueva metodología incluye un componente basado en los precios de los mercados de futuros para reducir la volatilidad del precio [Precio Voluntario para el Pequeño Consumidor (PVPC)](https://www.miteco.gob.es/es/energia/energia-electrica/electricidad/contratacion-suministro/precio-voluntario.html) [Voluntary price for the small consumer (PVPC) - Red Eléctrica](https://www.ree.es/en/activities/operation-of-the-electricity-systemvoluntary-price-small-consumer-pvpc) [oai_citation:3,
+La forma de calcular el precio de la tarifa regulada o PVPC cambiará en 2024 - Comunidad de Madrid ](https://www.comunidad.madrid/servicios/consumo/forma-calcular-precio-tarifa-regulada-o-pvpc-cambiara-2024).
 
 ### Componentes del PVPC
 

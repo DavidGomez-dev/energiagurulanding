@@ -23,7 +23,7 @@ _12/01/2024_
 
 ## La Primera Medida para Ahorrar
 
-La primera medida para atajar el gasto en electricidad es **descubrir qué es lo que está gastando más**. Mejorando y optimizando ese consumo es donde se conseguirán los mayores ahorros. En general, lo que **más suele consumir en nuestros hogares son los sistemas de calefacción o aire acondicionado** y los electrodomésticos. Puedes ver algunos [consejos para ahorrar en tu factura de la luz aquí](consejos-ahorrar-factura-luz.html).
+La primera medida para atajar el gasto en electricidad es **descubrir qué es lo que está gastando más**. Mejorando y optimizando ese consumo es donde se conseguirán los mayores ahorros. En general, lo que **más suele consumir en nuestros hogares son los sistemas de calefacción o aire acondicionado** y los electrodomésticos. Puedes ver algunos [consejos para ahorrar en tu factura de la luz aquí](/consejos-para-ahorrar-factura-de-la-luz/).
 
 ### Cómo Medir el Consumo Eléctrico
 
@@ -36,13 +36,11 @@ Sin embargo, excepto quizás la nevera, nunca se tienen los electrodomésticos c
 
 Para un **cálculo más preciso**, se puede usar un **medidor de energía IoT en el enchufe**. Este nos permitirá ver el consumo en tiempo real y cuánto ha consumido en una hora. De esa forma, con el precio del kWh, podremos saber cuánto hemos gastado por cada hora conectado.
 
-De forma similar se puede calcular para un hogar entero. [En este artículo se puede ver cómo tailored:systems ha empleado un medidor IoT conectado al cuadro eléctrico general para medirlo](https://tailored.systems/monitoreo-consumo-electrico-iot/).
+De forma similar se puede calcular para un hogar entero.
 
 ![Analizador de consumo inteligente IoT](/assets/images/SmartEnergyBanner.jpg)
 
 Con una **aplicación de IoT se puede llegar a calcular el gasto instantáneo**, multiplicando el consumo en W por el precio horario correspondiente.
-
-[Ver panel IoT](https://service.iot.tailored.systems/dashboard/c1c67120-67c8-11eb-b1f8-cd6fae994d19?publicId=2e5865c0-aa67-11ea-8a02-3b73d24348c2)
 
 ### Consumos Medios de Referencia
 
