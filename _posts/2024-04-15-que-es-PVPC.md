@@ -41,9 +41,9 @@ La confusión entre ellas es lógica porque hay grandes grupos empresariales que
 
 Las **comercializadoras**, tanto las de referencia como las de mercado libre, han de **comprar la electricidad al mismo precio en el mercado mayorista**, y luego trasladarlo al consumidor en sus tarifas para ganar su margen. En el caso de las Comercializadoras de Referencia, su margen es fijo y está marcado por el Gobierno. En las Libres, su margen puede ser cualquiera y tratarán de maximizarlo. Por esta razón, intentarán que te pases o las contrates, con un marketing más o menos agresivo, o hasta engañoso.
 
-Como el margen de las de Referencia es fijo, **históricamente el precio del mercado libre ha sido superior al del mercado regulado**. [Ver el artículo ¿Cómo ha cambiado el precio del PVPC en los últimos años?](evolucion-pvpc.html) En los últimos meses y años, debido a los vaivenes del mercado por la pandemia y la volatilidad en los precios del gas y del CO2, se han provocado efectos que han variado los precios abruptamente. Ello ha hecho que, por ejemplo, algunas comercializadoras libres se hayan arruinado (porque ofrecieron precios fijos al cliente inferiores a lo que podían comprar en el mercado después), o, al contrario, que ciertas comercializadoras hayan ofrecido precios menores a los del mercado regulado.
+Como el margen de las de Referencia es fijo, **históricamente el precio del mercado libre ha sido superior al del mercado regulado**. [Ver el artículo ¿Cómo ha cambiado el precio del PVPC en los últimos años?](/evolucion-precio-PVPC-ultimos-anos/) En los últimos meses y años, debido a los vaivenes del mercado por la pandemia y la volatilidad en los precios del gas y del CO2, se han provocado efectos que han variado los precios abruptamente. Ello ha hecho que, por ejemplo, algunas comercializadoras libres se hayan arruinado (porque ofrecieron precios fijos al cliente inferiores a lo que podían comprar en el mercado después), o, al contrario, que ciertas comercializadoras hayan ofrecido precios menores a los del mercado regulado.
 
-Para decidir qué hacer, [leer el artículo “PVPC o Mercado Libre, ¿qué interesa más?”](pvpc-mercado-libre.html)
+Para decidir qué hacer, [leer el artículo “PVPC o Mercado Libre, ¿qué interesa más?”](/PVPC-vs-mercado-libre-que-interesa/)
 
 ### ¿Cómo saber si tengo el PVPC?
 
