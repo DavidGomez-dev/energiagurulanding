@@ -441,9 +441,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
   //Retrieving prices data from Network and updating the web
   fetch(dataURL, {
     method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
+    // headers: {
+    //   "content-type": "application/json",
+    // },
   })
     .then((res) => {
       if (VERBOSE) console.log("From Network");
