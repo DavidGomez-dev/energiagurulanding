@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const webToday = true;
   const webTomorrow = false;
   const webPrecios = document.getElementsByClassName("webPrecios");
-  // const DOMAIN = "https://app.energia.guru"; // TODO change
+  // const DOMAIN = "https://app.energia.guru"; // TODO change to
 
   const DOMAIN = "https://app.energia.guru";
 
